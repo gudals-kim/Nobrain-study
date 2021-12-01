@@ -1,2 +1,2 @@
 # everyeat
-everyeat web service
+everyeat service
