@@ -1,2 +1,2 @@
-# everyeat_web
+# everyeat
 everyeat web service
