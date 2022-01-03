@@ -8,3 +8,4 @@ for googoo in 1...9 {
     print("\(num2) * \(googoo) = \(googoo * num2)")
     
 }
+
