@@ -233,5 +233,3 @@ Objective-C에서는 `NSString *str = @"test"` 선언하였습니다.
   결론은.......
 
 
-
-출처: https://lunightstory.tistory.com/44 [생각정리..]
