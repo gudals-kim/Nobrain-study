@@ -15,7 +15,6 @@
 곱한값 = 숫자1 * 숫자2* 숫자3
 곱한값 = str(곱한값)
 곱한값 = list(곱한값)
-print(곱한값)
 print(곱한값.count(str(0)))
 print(곱한값.count(str(1)))
 print(곱한값.count(str(2)))

@@ -19,4 +19,4 @@ for i in range(케이스):
     for j in 점수들:
         if 평균 < j: a = a+1
     비율 = (a/학생수)*100
-    print("{:.3f}%%".format(비율))
+    print("{:.3f}%".format(비율))

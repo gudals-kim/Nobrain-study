@@ -9,5 +9,4 @@
 
 숫자 = input()
 리스트 = list(map(int, input().split()))
-
 print("%d %d"%(min(리스트),max(리스트)))

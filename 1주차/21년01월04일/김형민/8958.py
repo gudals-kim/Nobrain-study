@@ -10,22 +10,17 @@
 
 # 출력
 # 각 테스트 케이스마다 점수를 출력한다.
-총개수 = int(input())
-for i in range(총개수):
-    정답 = input()
-    연속 = 0
-    점수 = 0
-    for j in range(0,len(정답)):
-        if int(len(정답)) == int(j)+1:
-            if 정답[j] ==  'O': 
-                점수 = 점수 + 연속
-                print(점수)
-            else:
-                print(점수)
-        elif 정답[j] ==  'O':
-            연속 = 연속 + 1
-            점수 = 점수 + 연속
+a = int(input())
+for i in range(a):
+    b = input()
+    s = list(b)
+    sum = 0
+    c = 1
+    for i in s:
+        if i == 'O':
+            sum += c
+            c += 1
         else:
-            점수 = 점수 + 연속
-            연속 = 0
+            c = 1
+    print(sum)
 

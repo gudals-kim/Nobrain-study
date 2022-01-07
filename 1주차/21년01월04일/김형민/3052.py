@@ -13,7 +13,5 @@
 for i in range(10): 리스트.append(int(input()))
 for j in 리스트: 
     나머지들.append(j%42)
-print(나머지들)
 나머지들 = set(나머지들)
-print(나머지들)
 print(len(list(나머지들)))

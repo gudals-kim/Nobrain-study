@@ -18,6 +18,7 @@ for i in range(9):
     리스트.append(int(input()))
 최대값 = max(리스트)
 몇번째 = 리스트.index(max(리스트))
-print("%d\n%d"%(최대값,몇번째))    
+print("%d\n%d"%(최대값,몇번째+1))    
+    
     
     
