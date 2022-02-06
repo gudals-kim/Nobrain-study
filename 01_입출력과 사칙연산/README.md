@@ -73,7 +73,7 @@
     <td align="center"><a href="https://www.acmicpc.net/problem/2557">바로가기</a></td>
     <td align="center"><a href="https://www.acmicpc.net/problem/2557">바로가기</a></td>
     <td align="center"><a href="https://www.acmicpc.net/problem/2557">바로가기</a></td>
-    <td align="center"><a href="https://www.acmicpc.net/problem/2557">바로가기</a></td>
+    <td align="center"><a href="https://github.com/gudals-kim/Nobrain-study/blob/master/01_%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC%20%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0/%EB%B0%95%EA%B4%91%ED%98%84/1000.swift">바로가기</a></td>
   </tr>
     <tr>
     <td align="center">06</td>
