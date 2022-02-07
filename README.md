@@ -22,10 +22,210 @@
 
 ✔ 기초 알고리즘, 자료구조 완벽 이해
 
+----------------
+-------------
+# 📌 자료구조 개념
 
-✔ 정보처리기사 자격증 합격
+<details>
+    <summary>🔍 배열 개념 정리</summary>
 
--------------------
+> 배열 개념 
+> ------------
+> - 데이터를 나열하고, 각 데이터를 인덱스에 대응하도록 구성한 데이터 구조
+> - 파이썬에서는 리스트 타입이 배열 기능을 제공함
+> ------------
+## 1. 배열이 필요한 이유
+- 같은 종류의 데이터를 효율적으로 관리하기 위해 사용된다.
+- 같은 종류의 데이터를 순차적으로 저장한다.
+
+## 2. 배열의 장점
+- 빠른 접근이 가능하다.
+## 3. 배열의 단점
+- 공간의 낭비가 있을 수 있고, 데이터의 추가 및 삭제가 번거롭다.
+- 미리 공간을 지정해야 한다.
+## 4. 파이썬에서의 배열
+- 파이썬 리스트 활용
+```
+# 1차원 배열
+data = [1,2,3,4,5]
+print (data)
+출력 > [1,2,3,4,5]
+```
+```
+# 2차원 배열 : 리스트로 구현시
+data = [[1,2,3],[4,5,6],[7,8,9]]
+print(data)
+print(data[0])
+print(data[1][2])
+print(data[0][2])
+출력 > [[1,2,3],[4,5,6],[7,8,9]] # data
+출력 > [1,2,3] # data[0]
+출력 > 6 #data[1][2]
+출력 > 3 #data[0][2]
+```
+### 파이썬 연습 문제 1
+- 다음 dataset 에서 전체 이름 안에 M이 몇번 나왔는지 빈도수 출력하기
+```
+dataset = ['Braund, Mr. Owen Harris',
+'Cumings, Mrs. John Bradley (Florence Briggs Thayer)',
+'Heikkinen, Miss. Laina',
+'Futrelle, Mrs. Jacques Heath (Lily May Peel)',
+'Allen, Mr. William Henry',
+'Moran, Mr. James',
+'McCarthy, Mr. Timothy J',
+'Palsson, Master. Gosta Leonard',
+'Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)',
+'Nasser, Mrs. Nicholas (Adele Achem)',
+'Sandstrom, Miss. Marguerite Rut',
+'Bonnell, Miss. Elizabeth',
+'Saundercock, Mr. William Henry',
+'Andersson, Mr. Anders Johan',
+'Vestrom, Miss. Hulda Amanda Adolfina',
+'Hewlett, Mrs. (Mary D Kingcome) ',
+'Rice, Master. Eugene',
+'Williams, Mr. Charles Eugene',
+'Vander Planke, Mrs. Julius (Emelia Maria Vandemoortele)',
+'Masselmani, Mrs. Fatima',
+'Fynney, Mr. Joseph J',
+'Beesley, Mr. Lawrence',
+'McGowan, Miss. Anna "Annie"',
+'Sloper, Mr. William Thompson',
+'Palsson, Miss. Torborg Danira',
+'Asplund, Mrs. Carl Oscar (Selma Augusta Emilia Johansson)',
+'Emir, Mr. Farred Chehab',
+'Fortune, Mr. Charles Alexander',
+'Dwyer, Miss. Ellen "Nellie"',
+'Todoroff, Mr. Lalio']
+```
+```
+빈도수 = 0
+for data in dataset:
+    for i in reange(len(data)):
+        if data[i] == 'M' :
+            빈도수 += 1
+print(빈도수)
+출력 > 38
+```
+</details>
+<details>
+    <summary>🔍 큐 개념 정리</summary>
+
+##  큐 (Queue)
+
+### 1. 큐 구조
+* 줄을 서는 행위와 유사
+* 가장 먼저 넣은 데이터를 가장 먼저 꺼낼 수 있는 구조
+  - 음식점에서 가장 먼저 줄을 선 사람이 제일 먼저 음식점에 입장하는 것과 동일
+  - FIFO(First-In, First-Out) 또는 LILO(Last-In, Last-Out) 방식으로 스택과 꺼내는 순서가 반대
+  
+<img src="https://www.fun-coding.org/00_Images/queue.png" />
+* 출처: http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/
+
+### 2. 알아둘 용어
+* Enqueue: 큐에 데이터를 넣는 기능
+* Dequeue: 큐에서 데이터를 꺼내는 기능
+* <font color='yellow'>Visualgo 사이트에서 시연해보며 이해하기 (enqueue/dequeue 만 클릭해보며): https://visualgo.net/en/list</font>
+
+### 3. 파이썬 queue 라이브러리 활용해서 큐 자료 구조 사용하기
+* **queue 라이브러리에는 다양한 큐 구조로 Queue(), LifoQueue(), PriorityQueue() 제공**
+* <font color='yellow'>프로그램을 작성할 때 프로그램에 따라 적합한 자료 구조를 사용</font>
+  - Queue(): 가장 일반적인 큐 자료 구조
+  - LifoQueue(): 나중에 입력된 데이터가 먼저 출력되는 구조 (스택 구조라고 보면 됨)
+  - PriorityQueue(): 데이터마다 우선순위를 넣어서, 우선순위가 높은 순으로 데이터 출력
+  
+> 일반적인 큐 외에 다양한 정책이 적용된 큐들이 있음
+
+#### ✔ 3.1. Queue()로 큐 만들기 (가장 일반적인 큐, FIFO(First-In, First-Out))
+```
+import queue             #큐 라이브러리 임포트
+
+data_queue = queue.Queue()  # 변수를 Queue로 선언
+
+data_queue.put("funcoding") # put을 통한 데이터 추가
+data_queue.put(1) 
+data_queue.qsize()  # Queue의 크기 출력
+data_queue.get()  # Queue 데이터 뽑기
+data_queue.get()
+```
+```
+출력 > 2            #data_queue.qsize()
+출력 > funcoding    #data_queue.get()
+출력 > 1            #data_queue.get()
+```
+#### ✔ 3.2. LifoQueue()로 큐 만들기 (LIFO(Last-In, First-Out))
+```
+import queue
+data_queue = queue.LifoQueue()
+
+data_queue.put("funcoding")
+data_queue.put(1)
+
+data_queue.qsize()
+
+data_queue.get()
+
+```
+```
+출력 > 2          #data_queue.qsize()
+출력 > 1          #data_queue.get()
+```
+#### ✔ 3.3. PriorityQueue()로 큐 만들기
+```
+import queue
+
+data_queue = queue.PriorityQueue()
+
+data_queue.put((10, "korea"))
+data_queue.put((5, 1))
+data_queue.put((15, "china"))
+
+data_queue.qsize()
+
+data_queue.get()
+
+data_queue.get()
+```
+```
+출력 > 3                    #data_queue.qsize()
+출력 > (5, 1)               #data_queue.get()
+출력 > (10, 'korea')        #data_queue.get()
+```
+### ✔ 참고: 어디에 큐가 많이 쓰일까?
+- 멀티 태스킹을 위한 프로세스 스케쥴링 방식을 구현하기 위해 많이 사용됨 (운영체제 참조)
+
+> 큐의 경우에는 장단점 보다는 (특별히 언급되는 장단점이 없음), 큐의 활용 예로 프로세스 스케쥴링 방식을 함께 이해해두는 것이 좋음
+
+### 4. 프로그래밍 연습 
+<div class="alert alert-block alert-warning">
+<strong><font color="green" size="3em">연습1: 리스트 변수로 큐를 다루는 enqueue, dequeue 기능 구현해보기</font></strong>
+</div>
+
+```
+queue_list = list()
+
+def enqueue(data):
+    queue_list.append(data)
+    
+def dequeue():
+    data = queue_list[0]
+    del queue_list[0]
+    return data
+
+for index in range(10):
+    enqueue(index)
+
+len(queue_list)
+dequeue()
+```
+```
+출력 > 10 # len(queue_list)
+출력 > 2  # dequeue()
+```
+
+</details>
+
+
+-------------
 ##
 
 # 👩‍👩‍👦‍👦 멤버
