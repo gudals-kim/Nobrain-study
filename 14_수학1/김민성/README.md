@@ -1,6 +1,6 @@
 # 공부내용 
 
-
+ 
 > ⚡2607번 | <img height="23px" width="25px" src="https://d2gd6pc034wcta.cloudfront.net/tier/6.svg"> 최대공약수와 최소공배수
 > ------------
 >  풀이
