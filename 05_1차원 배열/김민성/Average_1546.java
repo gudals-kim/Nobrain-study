@@ -18,5 +18,6 @@ public class Average_1546 {
             sum += ((double)number[i] /(double)max)*100;
         }
         System.out.println(sum/number.length);
+
     }
 }
