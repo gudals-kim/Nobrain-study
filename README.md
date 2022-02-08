@@ -375,7 +375,7 @@ dequeue()
   <tr>
     <td align="center">13</td>
     <td align="center" width="300px">수학 1</td>
-    <td align="center" width="110px"><a href="">바로가기</a></td>
+    <td align="center" width="110px"><a href="https://github.com/gudals-kim/Nobrain-study/tree/master/14_%EC%88%98%ED%95%991">바로가기</a></td>
     <td align="center" width="120px">19</td>
     <td align="center" width="120px">19</td>
     <td align="center" width="80px">0/4</td>
@@ -383,7 +383,7 @@ dequeue()
   <tr>
     <td align="center">14</td>
     <td align="center" width="300px">다이나믹 프로그래밍 1</td>
-    <td align="center" width="110px"><a href="">바로가기</a></td>
+    <td align="center" width="110px"><a href="https://github.com/gudals-kim/Nobrain-study/tree/master/15_%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D1">바로가기</a></td>
     <td align="center" width="120px">29</td>
     <td align="center" width="120px">29</td>
     <td align="center" width="80px">0/4</td>

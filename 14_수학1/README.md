@@ -1,4 +1,4 @@
-## 📚 자료구조 1
+## 📚 수학 1
 
 [총 문제 링크](https://code.plus/course/41)
 
@@ -166,7 +166,8 @@
     <td align="center"><a href="">바로가기</a></td>
     <td align="center"><a href="">바로가기</a></td>
   </tr> 
-    </tr>
+    </tr>  
+ 
 </table>
 
 <br/><br/>
