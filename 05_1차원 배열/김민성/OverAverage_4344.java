@@ -25,6 +25,7 @@ public class OverAverage_4344 {
                 }
             }
             System.out.printf("%.3f%%\n",(double)(count/student.length)*100);
+
         }
     }
 }

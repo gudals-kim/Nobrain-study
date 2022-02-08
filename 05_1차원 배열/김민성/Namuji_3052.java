@@ -26,5 +26,6 @@ public class Namuji_3052 {
             }
         }
         System.out.println(count);
+
     }
 }

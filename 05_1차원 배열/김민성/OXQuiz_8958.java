@@ -23,6 +23,7 @@ public class OXQuiz_8958 {
                 }
             }
             System.out.println(sum);
+
         }
     }
 }

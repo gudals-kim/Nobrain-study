@@ -15,5 +15,6 @@ public class MinMax_10818 {
 
         Arrays.sort(number);
         System.out.println(number[0] + " " + number[n-1]);
+
     }
 }

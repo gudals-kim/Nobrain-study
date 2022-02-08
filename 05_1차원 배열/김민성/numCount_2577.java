@@ -17,6 +17,7 @@ public class numCount_2577 {
                 }
             }
             System.out.println(count);
+
         }
     }
 }

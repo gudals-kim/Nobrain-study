@@ -21,5 +21,6 @@ public class Max_2562 {
         }
         System.out.println(max);
         System.out.println(index+1);
+
     }
 }
